@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topo{
+    background-image: linear-gradient(to left, #90b85c,#c7d9b0);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.topo > img{
+    width: 170px;
+}
+
+.topo2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link{
+    display: inline-block;
+    text-decoration: none;
+    color: #484848;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-right: 20px;
+}
+
+.link:hover{
+    background-color: #7BAC3B;
+    padding: 8px 10px;
+    color: #ffffff;
+}
+
+/* barra de pesquisa */
+
+.pesquisar{
+    width: 300px;
+    height: 30px;
+    margin: auto;
+}
+
+#texto{
+    width: 250px;
+    height: 30px;
+    font-size: 1em;
+    float: left;
+    border-radius: 5px;
+}
+
+#texto:focus{
+    border: solid 2px #567829;
+}
+
+.lupa{
+    background-color: #567829;
+    width: 30px;
+    cursor: pointer;
+}
+
+.lupa:hover{
+    background-color: #7BAC3B;
+}
+
+/*fim barra de pesquisa*/
+
+main{
+    background-color: #dbeac6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.noticias{
+    background-color: #ffffff80;
+    border-radius: 10px;
+    width: 320px;
+    margin: 20px;
+}
+
+.noticias > h2{
+    background-image: linear-gradient(to right,#567829,#7BAC3B);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.noticias > p{
+    padding: 15px;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.noticias > a{
+    background-color: #567829;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 20px auto;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.noticias > a:hover{
+    background-color: #7BAC3B;
+    color: #484848;
+    font-weight: bold;
+}
+
+footer{
+    background-image: linear-gradient(to top, #90b85c,#c7d9b0);
+}
+
+footer > p{
+    color: #567829;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: #395219;
+}
+
+footer > p > a:hover{
+        text-decoration: underline;
+}
+
+@media (max-width: 870px){
+    .topo{
+        display: block;
+        text-align: center;
+        height: 350px;
+    }
+
+    .topo2{
+        display: inline-block;
+        height: 50px;
+        margin-top: 50px;
+    
+    }
+
+    .link{
+        display: inline-block;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .barra_pesquisa{
+        height: 50px;
+    }
+
+    .pesquisar{
+        display: inline-block;
+    }
+
+    .topo > img{
+        width: 40vh;
+        margin-top: 20px;
+    }
+}
